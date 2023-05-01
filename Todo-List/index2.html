@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        nav{
+            nav-right: root;
+
+        }
+       ul{
+        background-color: #3f3f3f;
+        list-style: none;
+        
+        width: 100%;
+       }
+       ul li{
+        display: inline-block;
+        width: 100px;
+        padding: 15px;
+        margin-right: 25px;
+        margin-left: -40px;
+       }
+       ul li:hover{
+        background-color: red;
+        transition: 0.5s;
+       }
+       ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       i{
+        padding-right: 10px;
+       }
+       #news-content{
+        position: absolute;
+        z-index: 1;
+        display: none;
+        margin-top: 15.2px;
+        margin-left: -17px;
+        width: 92px;
+       }
+       .news-li:hover #news-content{
+        display: block;
+       }
+       #news2-content{
+        position: absolute;
+        z-index: 2;
+        display: none;
+        margin-top: -33px;
+        margin-left: 100px;
+        width: 92px;
+
+       }
+       .news2-li:hover #news2-content{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="news-li">
+                <a href="">News</a>
+                <div id="news-content">
+                    <ul>
+                        <li style="display: block;"><a href="">Haber 1</a></li>
+                        <li class="news2-li" style="display: block;">
+                            <a href="">Haber 2</a>
+                            <div id="news2-content">
+                                <ul>
+                                    <li style="display: block;"><a href="">Haber 1</a></li>
+                                    <li style="display: block;"><a href="">Haber 2</a></li>
+                                    <li style="display: block;"><a href="">Haber 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li style="display: block;"><a href="">Haber 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href=""> About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
